@@ -2,7 +2,7 @@
 
 * Студент: [Abdulla Abdullayev](https://up.htmlacademy.ru/adaptive/6/user/134826).
 * Наставник: [Леонид Лебедев] (https://htmlacademy.ru/profile/id67135).
-  test
+  проверкапроверкапроверкапроверкапроверка
 
 ---
 
