@@ -2,10 +2,6 @@
 
 * Студент: [Abdulla Abdullayev](https://up.htmlacademy.ru/adaptive/6/user/134826).
 * Наставник: [Леонид Лебедев] (https://htmlacademy.ru/profile/id67135).
-  
-  проверка5
-
----
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
