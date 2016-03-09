@@ -5,8 +5,110 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="main-header__logo">
+        <img class="main-header__pink" src="a.png" width="75" height="22" alt="Пинк">
+      </div>
+      <nav class="main-nav">
+        <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
+        <ul class="main-nav__main-menu">
+          <li class="main-nav__items">
+          </li>
+          <li class="main-nav__items">
+            <a class="main-nav__links" href="#">Информация</a>
+          </li>
+          <li class="main-nav__items">
+            <a class="main-nav__links" href="#">Возможности</a>
+          </li>
+          <li class="main-nav__items">
+            <a class="main-nav__links" href="#">Отзывы</a>
+          </li>
+          <li class="main-nav__items">
+            <a class="main-nav__links" href="#">Стоимость</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="features">
+        <section class="features__images">
+          <img class="features__back-image" src="a.png" width="320" height="486" alt="Город">
+          <h3 class="features__header">Взгляните на жизнь иначе!</h3>
+          <img class="features__front-image" src="a.png" width="320" height="313" alt="iphone в руке">
+        </section>
+        <section class="features__download">
+          <a class="features__button" href="#">Скачать приложение</a>
+          <img class="features__OS  app-features__OS--ios" src="a.png" width="47" height="56" alt="ios">
+          <img class="features__OS  app-features__OS--android" src="a.png" width="43" height="47" alt="android">
+          <img class="features__OS  app-features__OS--windows" src="a.png" width="44" height="41" alt="windows">
+          <p class="features__OS-info">Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8</p>
+        </section>
+      </article>
+      <section class="description">
+        <section class="description__intro">
+          <div class="description__offer">Устали от серости мегаполиса?</div>
+          <div class="description__offer">Нам есть, что вам предложить!</div>
+        </section>
+        <section class="description__about">
+          <div class="description__about-item"
+            <h4 class="description__header">Поднимает настроение</h4>
+            <p class="description__info">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+          </div>
+          <div class="description__about-item"
+            <h4 class="description__header">Меняет мир вокруг</h4>
+            <p class="description__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="description__about-item"
+            <h4 class="description__header">Заводит новых друзей</h4>
+            <p class="description__info">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </section>
+        <img class="description__view" src="a.png" width="157" height="320" alt="Розовый фон">
+      </section>
+      <section class="feedback">
+        <div class="feedback__slider">
+          <input class="feedback__switcher" type="radio" name="switcher" id="switcher-fd1" checked>
+          <input class="feedback__switcher" type="radio" name="switcher" id="switcher-fd2">
+          <input class="feedback__switcher" type="radio" name="switcher" id="switcher-fd3">
+          <label for="switcher-fd1"></label>
+          <label for="switcher-fd2"></label>
+          <label for="switcher-fd3"></label>
+        </div>
+        <b class="feedback__header">Николай Петров</b>
+        <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </section>
+      <section class="price">
+        <input class="price__switcher" type="radio" name="switcher" id="switcher-pc1">
+        <input class="price__switcher" type="radio" name="switcher" id="switcher-pc2" checked>
+        <input class="price__switcher" type="radio" name="switcher" id="switcher-pc3">
+        <label for="switcher-pc1"></label>
+        <label for="switcher-pc2"></label>
+        <label for="switcher-pc3"></label>
+        <table class="price__graph">
+          <th class="price__header">Стандарт<br><span class="app-price__USD">3,99 USD</span></th>
+          <tr><td class="price__yes">Розовый фильтр</td></tr>
+          <tr><td class="price__yes">Смайлики</td></tr>
+          <tr><td class="price__no">Комментарии</td></tr>
+        </table>
+      </section>
+      <section class="contacts">
+        <div class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</div>
+        <div class="contacts__items">
+          <b>Звоните:</b>
+          <a class="contacts__items-details" href="+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__items">
+          <b>Пишите:</b>
+          <a class="contacts__items-details" href="#">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__items">
+          <b>Приезжайте в гости:</b>
+          <span class="contacts__items-details">ул. Большая<br>Конюшенная, 19/8</span>
+        </div>
+      </section>
+      <section class="map">
+        <img class="map__point" src="a.png" width="" height="" alt="Карта">
+      </section>
+    </main>
   </body>
 </html>
