@@ -2,113 +2,178 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Главная</title>
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__logo">
-        <img class="main-header__pink" src="a.png" width="75" height="22" alt="Пинк">
+        <img class="main-header__pink" src="http://placehold.it/150x100" width="75" height="22" alt="лого Пинк">
       </div>
       <nav class="main-nav">
         <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
-        <ul class="main-nav__main-menu">
-          <li class="main-nav__items">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Информация</a>
           </li>
-          <li class="main-nav__items">
-            <a class="main-nav__links" href="#">Информация</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Возможности</a>
           </li>
-          <li class="main-nav__items">
-            <a class="main-nav__links" href="#">Возможности</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Отзывы</a>
           </li>
-          <li class="main-nav__items">
-            <a class="main-nav__links" href="#">Отзывы</a>
-          </li>
-          <li class="main-nav__items">
-            <a class="main-nav__links" href="#">Стоимость</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Стоимость</a>
           </li>
         </ul>
       </nav>
-    </header>
-    <main>
       <article class="features">
-        <section class="features__images">
-          <img class="features__back-image" src="a.png" width="320" height="486" alt="Город">
-          <h3 class="features__header">Взгляните на жизнь иначе!</h3>
-          <img class="features__front-image" src="a.png" width="320" height="313" alt="iphone в руке">
+        <section class="features-intro">
+          <h3 class="features-intro__header">Взгляните на жизнь иначе!</h3>
+          <img class="features-intro__image" src="http://placehold.it/150x100" width="320" height="313" alt="iphone в руке">
         </section>
-        <section class="features__download">
-          <a class="features__button" href="#">Скачать приложение</a>
-          <img class="features__OS  app-features__OS--ios" src="a.png" width="47" height="56" alt="ios">
-          <img class="features__OS  app-features__OS--android" src="a.png" width="43" height="47" alt="android">
-          <img class="features__OS  app-features__OS--windows" src="a.png" width="44" height="41" alt="windows">
-          <p class="features__OS-info">Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8</p>
+        <section class="features-download">
+          <a class="features-download__button" href="#">Скачать приложение</a>
+          <a class="features-dowload__os  features-dowload__os--ios" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8"><img src="http://placehold.it/150x100" width="47" height="56" alt="ios"></a>
+          <a class="features-dowload__os  features-dowload__os--ios" href="https://play.google.com/store?hl=ru"><img src="http://placehold.it/150x100" width="43" height="47" alt="android"></a>
+          <a class="features-dowload__os  features-dowload__os--ios" href="https://www.microsoft.com/ru-ru/store/apps"><img src="http://placehold.it/150x100" width="44" height="41" alt="windows"></a>
+          <p class="features-download__os-info">Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8</p>
         </section>
       </article>
+    </header>
+    <main>
       <section class="description">
-        <section class="description__intro">
-          <div class="description__offer">Устали от серости мегаполиса?</div>
-          <div class="description__offer">Нам есть, что вам предложить!</div>
+        <section class="description__intro  container">
+          <p class="description__offer">Устали от серости мегаполиса?</p>
+          <p class="description__offer">Нам есть, что вам предложить!</p>
         </section>
         <section class="description__about">
-          <div class="description__about-item"
+          <div class="container">
+          <div class="description__about-item">
             <h4 class="description__header">Поднимает настроение</h4>
             <p class="description__info">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
           </div>
-          <div class="description__about-item"
+          <div class="description__about-item">
             <h4 class="description__header">Меняет мир вокруг</h4>
             <p class="description__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
-          <div class="description__about-item"
+          <div class="description__about-item">
             <h4 class="description__header">Заводит новых друзей</h4>
             <p class="description__info">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
+          </div>
         </section>
-        <img class="description__view" src="a.png" width="157" height="320" alt="Розовый фон">
+        <img class="description__view" src="http://placehold.it/150x100" width="157" height="320" alt="Розовый фон">
       </section>
-      <section class="feedback">
+      <section class="feedback  container">
         <div class="feedback__slider">
           <input class="feedback__switcher" type="radio" name="switcher" id="switcher-fd1" checked>
           <input class="feedback__switcher" type="radio" name="switcher" id="switcher-fd2">
           <input class="feedback__switcher" type="radio" name="switcher" id="switcher-fd3">
-          <label for="switcher-fd1"></label>
-          <label for="switcher-fd2"></label>
-          <label for="switcher-fd3"></label>
+          <div class="feedback__slider-controls">
+            <label for="switcher-fd1"></label>
+            <label for="switcher-fd2"></label>
+            <label for="switcher-fd3"></label>
+          </div>
+          <div class="feedback-slide" id="slide1">
+            <p class="feedback__header">Николай Петров</p>
+            <p class="feedback-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="feedback-slide" id="slide2">
+            <p class="feedback__header">Николай Петров</p>
+            <p class="feedback-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="feedback-slide" id="slide3">
+            <p class="feedback__header">Николай Петров</p>
+            <p class="feedback-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
         </div>
-        <b class="feedback__header">Николай Петров</b>
-        <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </section>
       <section class="price">
         <input class="price__switcher" type="radio" name="switcher" id="switcher-pc1">
         <input class="price__switcher" type="radio" name="switcher" id="switcher-pc2" checked>
         <input class="price__switcher" type="radio" name="switcher" id="switcher-pc3">
-        <label for="switcher-pc1"></label>
-        <label for="switcher-pc2"></label>
-        <label for="switcher-pc3"></label>
+        <div class="price__switcher-controls">
+          <label for="switcher-pc1"></label>
+          <label for="switcher-pc2"></label>
+          <label for="switcher-pc3"></label>
+        </div>
         <table class="price__graph">
-          <th class="price__header">Стандарт<br><span class="app-price__USD">3,99 USD</span></th>
-          <tr><td class="price__yes">Розовый фильтр</td></tr>
-          <tr><td class="price__yes">Смайлики</td></tr>
-          <tr><td class="price__no">Комментарии</td></tr>
+          <tr>
+            <th class="price__header" colspan="2">
+              <div class="price__name">База</div>
+              <div class="price__cost">1,99 USD</div>
+            </th>
+          </tr>
+          <tr>
+            <td class="price__yes">Розовый фильтр</td>
+            <td class="price__image"><img src="http://placehold.it/150x100" width="27" height="26" alt="Крестик"></td>
+          </tr>
+          <tr>
+            <td class="price__yes">Смайлики</td>
+            <td class="price__image"><img src="http://placehold.it/150x100" width="27" height="26" alt="Крестик"></td>
+          </tr>
+          <tr>
+            <td class="price__no">Комментарии</td>
+            <td class="price__image"><img src="http://placehold.it/150x100" width="31" height="31" alt="Галочка"></td>
+          </tr>
+          <tr>
+            <th class="price__header" colspan="2">
+              <div class="price__popular">Хит</div>
+              <div class="price__name">Стандарт</div>
+              <div class="price__cost">3,99 USD</div>
+            </th>
+          </tr>
+          <tr>
+            <td class="price__yes">Розовый фильтр</td>
+            <td class="price__image"><img src="http://placehold.it/150x100" width="31" height="21" alt="Галочка"></td>
+          </tr>
+          <tr>
+            <td class="price__yes">Смайлики</td>
+            <td class="price__image"><img src="http://placehold.it/150x100" width="31" height="21" alt="Галочка"></td>
+          </tr>
+          <tr>
+            <td class="price__no">Комментарии</td>
+            <td class="price__image"><img src="http://placehold.it/150x100" width="27" height="26" alt="Крестик"></td>
+          </tr>
+          <tr>
+            <th class="price__header" colspan="2">
+              <div class="price__name">Анлим</div>
+              <div class="price__cost">9,99 USD</div>
+            </th>
+          </tr>
+          <tr>
+            <td class="price__yes">Розовый фильтр</td>
+            <td class="price__image"><img src="http://placehold.it/150x100" width="31" height="21" alt="Галочка"></td>
+          </tr>
+          <tr>
+            <td class="price__yes">Смайлики</td>
+            <td class="price__image"><img src="http://placehold.it/150x100" width="31" height="21" alt="Галочка"></td>
+          </tr>
+          <tr>
+            <td class="price__no">Комментарии</td>
+            <td class="price__image"><img src="http://placehold.it/150x100" width="31" height="31" alt="Галочка"></td>
+          </tr>
         </table>
       </section>
-      <section class="contacts">
-        <div class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</div>
-        <div class="contacts__items">
-          <b>Звоните:</b>
-          <a class="contacts__items-details" href="+7 (812) 555-66-66">+7 (812) 555-66-66</a>
-        </div>
-        <div class="contacts__items">
-          <b>Пишите:</b>
-          <a class="contacts__items-details" href="#">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contacts__items">
-          <b>Приезжайте в гости:</b>
-          <span class="contacts__items-details">ул. Большая<br>Конюшенная, 19/8</span>
-        </div>
-      </section>
-      <section class="map">
-        <img class="map__point" src="a.png" width="" height="" alt="Карта">
-      </section>
     </main>
+    <footer class="index-footer">
+      <section class="index-footer__contacts  container">
+        <p class="index-footer__header1">Остались вопросы?</p>
+        <p class="index-footer__header2">Свяжитесь с нами!</p>
+        <div class="index-footer__items">
+          <p class="index-footer__items-header">Звоните:</p>
+          <a class="index-footer__items-details" href="tel:007 (812) 555-66-66">+7 (812) 555-66-66</a>
+        </div>
+        <div class="index-footer__items">
+          <p class="index-footer__items-header">Пишите:</p>
+          <a class="index-footer__items-details" href="#">mail@htmlacademy.ru</a>
+        </div>
+        <div class="index-footer__items">
+          <p class="index-footer__items-header">Приезжайте в гости:</p>
+          <p class="index-footer__items-details">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.965685285748!2d30.345253233365405!3d59.932426869562256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5e66d51c5%3A0x6f00589ac258db97!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2s!4v1457620061303" width="320" height="645" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </footer>
   </body>
 </html>
