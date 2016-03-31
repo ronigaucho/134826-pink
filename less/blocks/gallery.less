@@ -1,3 +1,39 @@
 .gallery {
   text-align: center;
+  .gallery__description {
+    padding: 30px;
+  }
+  .gallery__container {
+    .container();
+  }
+}
+
+@media (min-width: 321px) and (max-width: 700px) {
+  .gallery {
+    .clearfix();
+    text-align: center;
+    .gallery__description {
+      width: 450px;
+      padding: 50px;
+      margin: auto;
+    }
+    .gallery__container {
+     .container();
+    }
+  }
+}
+
+@media (min-width: 701px) {
+  .gallery {
+    .clearfix();
+    text-align: center;
+    .gallery__description {
+      width: 600px;
+      padding: 50px;
+      margin: auto;
+    }
+    .gallery__container {
+     .container();
+    }
+  }
 }

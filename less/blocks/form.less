@@ -1,66 +1,389 @@
 .form {
   margin-top: 50px;
   text-align: center;
+  .form__container {
+    .container();
+    .form__description {
+      margin-bottom: 40px;
+      .form__description-add {
+        display: none;
+      }
+    }
+    .form__fieldset--personal {
+      .form__fieldset();
+      text-align: left;
+      margin-bottom: 40px;
+      .form__text {
+        padding: 12px 20px;
+        margin-bottom: 15px;
+        width: 100%;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+      }
+      .form__label--text {
+        display: block;
+        color: red;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .form__fieldset--achievements {
+    .form__fieldset();
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    .form__legend--achievements {
+      .form__legend();
+    }
+    .form__container {
+      .container();
+      .form__checkbox {
+        display: none;
+      }
+      .form__label--custom {
+        display: block;
+        margin-bottom: 40px;
+        color:#000000;
+      }
+    }
+  }
+  .form__fieldset--contacts {
+    .form__fieldset();
+    text-align: left;
+    margin-bottom: 50px;
+    .form__container {
+      .container();
+      .form__text {
+        padding: 12px 20px;
+        margin-bottom: 15px;
+        width: 100%;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+      }
+      .form__label--text {
+        display: block;
+        color: red;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .form__fieldset--os {
+    .form__fieldset();
+    padding-top: 30px;
+    background-color: #f2f2f2;
+    .form__legend--os {
+      .form__legend();
+    }
+    .form__container {
+      .container();
+      .form__radio {
+        display: none;
+      }
+      .form__label--custom {
+        display: block;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .form__fieldset--emotions {
+    .form__fieldset();
+    margin-bottom: 40px;
+    margin-top: 50px;
+    .form__legend--textarea {
+      .form__legend();
+    }
+    .form__container {
+      .container();
+      .form__textarea {
+        width: 280px;
+        font-size: 18px;
+        border: 2px solid #e5e5e5;
+      }
+    }
+  }
+  .form__submit {
+    margin: auto;
+    margin-bottom: 35px;
+    padding: 17px 0;
+    min-width:280px;
+    background-color: green;
+    color: #ffffff;
+  }
 }
-.form__description {
-  margin-bottom: 40px;
+
+@media (min-width: 321px) and (max-width: 700px) {
+  .form {
+    .clearfix();
+    margin-top: 50px;
+    text-align: center;
+    .form__container {
+      .container();
+      .form__description {
+        margin-bottom: 40px;
+        .form__description-add {
+          display: inline;
+        }
+      }
+      .form__fieldset--personal {
+        .form__fieldset();
+        margin-bottom: 40px;
+        width: 620px;
+        .form__text {
+          padding: 12px 20px;
+          margin-bottom: 50px;
+          max-width: 520px;
+          border: 2px solid #000000;
+        }
+        .form__label--text {
+          float: left;
+          display: block;
+          padding: 12px 20px;
+          padding-left: 0;
+          margin-bottom: 50px;
+          color: red;
+        }
+      }
+    }
+    .form__fieldset--achievements {
+      width: 400px;
+      margin: auto;
+      padding: 50px 60px;
+      border: 2px solid #e6e6e6;
+      .form__legend--achievements {
+        .form__legend();
+        margin-left: 90px;
+      }
+      .form__container {
+        width: 500px;
+        .form__checkbox {
+          display: none;
+        }
+        .form__label--custom {
+          float: left;
+          display: block;
+          width: 260px;
+          margin-bottom: 40px;
+          margin-right: 50px;
+          color:#000000;
+        }
+      }
+    }
+    .form__fieldset--contacts {
+      width: 500px;
+      margin: auto;
+      margin-bottom: 30px;
+      padding: 50px 60px;
+      border: 2px solid #e6e6e6;
+      .form__container {
+        width: 500px;
+        .form__text {
+          display: block;
+          padding: 12px 20px;
+          margin-bottom: 15px;
+          margin: auto;
+          width: 355px;
+          border: 2px solid #000000;
+          box-sizing: border-box;
+        }
+        .form__label--text {
+          display: block;
+          padding: 12px 20px;
+          width: 330px;
+          color: red;
+          margin: auto;
+          margin-bottom: 10px;
+          outline: 1px solid;
+        }
+      }
+    }
+    .form__fieldset--os {
+      width: 500px;
+      padding: 50px 60px;
+      margin: auto;
+      border: 2px solid #e6e6e6;
+      .form__legend--os {
+        .form__legend();
+      }
+      .form__container {
+        width: 300px;
+        .form__radio {
+          display: none;
+        }
+        .form__label--custom {
+          display: block;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .form__fieldset--emotions {
+      width: 500px;
+      margin: auto;
+      margin-bottom: 40px;
+      margin-top: 50px;
+      padding: 50px 60px;
+      border: 2px solid #e6e6e6;
+      .form__legend--textarea {
+        .form__legend();
+      }
+      .form__container {
+        width: 500px;
+        .form__textarea {
+          width: 500px;
+          font-size: 18px;
+          border: 2px solid #e5e5e5;
+        }
+      }
+    }
+    .form__submit {
+      float: left;
+      margin: auto;
+      margin-bottom: 35px;
+      margin-left: 40px;
+      padding: 17px 0;
+      min-width:280px;
+      background-color: green;
+      color: #ffffff;
+    }
+  }
 }
-.form__fieldset--personal {
-  text-align: left;
-  margin-bottom: 40px;
-}
-.form__text{
-  padding: 12px 20px;
-  margin-bottom: 15px;
-  width: 235px;
-  border: 2px solid black;
-}
-.form__label--text {
-  display: block;
-  color: red;
-  margin-bottom: 10px;
-}
-.form__fieldset--achievements {
-  background-color: #f2f2f2;
-  padding-top: 30px;
-  margin-bottom: 30px;
-}
-fieldset {
-  border: none;
-}
-legend {
-  color: red;
-}
-.form__checkbox {
-  display: none;
-}
-.form__label--custom {
-  display: block;
-  margin-bottom: 40px;
-}
-.form__fieldset--contacts {
-  text-align: left;
-  margin-bottom: 50px;
-}
-.form__fieldset--os {
-  padding-top: 30px;
-  background-color: #f2f2f2;
-}
-.form__radio {
-  display: none;
-}
-.form__fieldset--emotions {
-  margin-bottom: 40px;
-  margin-top: 50px;
-}
-.form__textarea {
-  width: 275px;
-}
-.form__submit {
-  margin: auto;
-  margin-bottom: 35px;
-  padding: 17px 47px;
-  width:186px;
-  background-color: green;
-  color: #ffffff;
+
+
+@media (min-width: 701px) {
+  .form {
+    .clearfix();
+    margin-top: 50px;
+    text-align: center;
+    .form__container {
+      .container();
+      .form__description {
+        margin-bottom: 40px;
+        .form__description-add {
+          display: inline;
+        }
+      }
+      .form__fieldset--personal {
+        .form__fieldset();
+        margin-bottom: 40px;
+        width: 435px;
+        padding-right: 35px;
+        float: left;
+        .form__text {
+          float: right;
+          padding: 12px 20px;
+          margin-bottom: 50px;
+          max-width: 330px;
+          border: 2px solid #000000;
+        }
+        .form__label--text {
+          float: left;
+          display: block;
+          padding: 12px 20px;
+          padding-left: 0;
+          margin-bottom: 50px;
+          color: red;
+        }
+      }
+    }
+    .form__fieldset--achievements {
+      width: 820px;
+      margin: auto;
+      margin-bottom: 30px;
+      padding: 50px 60px;
+      border: 2px solid #e6e6e6;
+      .form__legend--achievements {
+        .form__legend();
+        margin-left: 290px;
+      }
+      .form__container {
+        .container();
+        .form__checkbox {
+          display: none;
+        }
+        .form__label--custom {
+          float: left;
+          display: block;
+          width: 260px;
+          margin-bottom: 40px;
+          margin-right: 50px;
+          color:#000000;
+        }
+      }
+    }
+    .form__fieldset--contacts {
+      width: 820px;
+      margin: auto;
+      margin-bottom: 30px;
+      padding: 50px 60px;
+      border: 2px solid #e6e6e6;
+      .form__container {
+        .form__text {
+          float: left;
+          display: block;
+          padding: 12px 20px;
+          margin-bottom: 15px;
+          width: 355px;
+          border: 2px solid #000000;
+          box-sizing: border-box;
+        }
+        .form__label--text {
+          float: left;
+          display: block;
+          padding: 12px 20px;
+          width: 335px;
+          color: red;
+          margin-bottom: 10px;
+          margin-right: 90px;outline: 1px solid;
+        }
+      }
+    }
+    .form__fieldset--os {
+      width: 300px;
+      margin-top: -870px;
+      margin-left: 800px;
+      margin-bottom: 640px;
+      border: 2px solid #e6e6e6;
+      .form__legend--os {
+        .form__legend();
+      }
+      .form__container {
+        width: 300px;
+        .form__radio {
+          display: none;
+        }
+        .form__label--custom {
+          display: block;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .form__fieldset--emotions {
+      width: 820px;
+      margin: auto;
+      margin-bottom: 40px;
+      margin-top: 50px;
+      padding: 40px 60px;
+      border: 2px solid #e6e6e6;
+      .form__legend--textarea {
+        .form__legend();
+      }
+      .form__container {
+        .container();
+        .form__textarea {
+          width: 820px;
+          font-size: 18px;
+          border: 2px solid #e5e5e5;
+        }
+      }
+    }
+    .form__submit {
+      float: left;
+      margin: auto;
+      margin-bottom: 35px;
+      margin-left: 200px;
+      padding: 17px 0;
+      min-width:280px;
+      background-color: green;
+      color: #ffffff;
+    }
+  }
 }

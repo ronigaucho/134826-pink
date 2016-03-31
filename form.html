@@ -2,43 +2,50 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Конкурс</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__container">
-        <div class="main-header__logo">
-          <a class="main-header__pink" href="#">
-            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="лого Пинк">
-          </a>
+      <div class="main-header__head">
+        <div class="main-header__container">
+          <div class="main-header__logo">
+            <a class="main-header__pink" href="../index.html">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="лого Пинк">
+            </a>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="../index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="../photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="../form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">Html Academy</a>
+              </li>
+            </ul>
+            <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
+          </nav>
         </div>
-        <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="../index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="../photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="../form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="features-intro">
-        <h2 class="features-intro__header">Конкурс на самое безбашеное путешествие с Пинк</h2>
+      <section class="features">
+        <div class="features__container">
+          <h2 class="features__header">Конкурс на самое безбашеное путешествие с Пинк</h2>
+        </div>
       </section>
     </header>
     <main>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__container">
-          <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="form__description-add">Пожалуйста, заполните форму ниже:</span>
+          </p>
           <fieldset class="form__fieldset  form__fieldset--personal">
             <label class="form__label  form__label--text" for="ps-n">Имя:</label>
               <input class="form__text" type="text" name="name" id="ps-n" placeholder="Введите ваше имя">
@@ -77,7 +84,7 @@
           <legend class="form__legend  form__legend--os">С каким приложением путешествовали?</legend>
           <div class="form__container">
             <input class="form__radio" type="radio" name="app-os" id="os-1" checked>
-            <label class="form__label  form__label--custom" for="os-1">Pink для iOS</label>
+            <label class="form__label  form__label--custom" for="os-1">Pink для IOS</label>
             <input class="form__radio" type="radio" name="app-os" id="os-2">
             <label class="form__label  form__label--custom" for="os-2">Pink на Android</label>
             <input class="form__radio" type="radio" name="app-os" id="os-3">
@@ -86,32 +93,36 @@
         </fieldset>
         <fieldset class="form__fieldset  form__fieldset--emotions">
           <legend class="form__legend  form__legend--textarea">Опишите свои эмоции</legend>
+          <div class="form__container">
             <textarea class="form__textarea" rows="8" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
         </fieldset>
         <input class="form__submit" type="submit" value="Отправить форму">
         <div class="form__required"><sup>*</sup> — Обязательные поля</div>
       </form>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__logo">
-        <img class="main-footer__pink" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк очки">
-      </div>
-      <ul class="main-footer__social">
-        <li class="main-footer__social-link  main-footer__social-link--twitter">
-          <a href="#">Twitter</a>
-        </li>
-        <li class="main-footer__social-link  main-footer__social-link--facebook">
-          <a href="#">Facebook</a>
-        </li>
-        <li class="main-footer__social-link  main-footer__social-link--youtube">
-          <a href="#">Youtube</a>
-        </li>
-      </ul>
-      <div class="main-footer__copyright">
-        <span class="main-footer__copyright-text">Разработано</span>
-        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/">
-          <img class="main-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Лого Html Academy">
-        </a>
+      <div class="main-footer__container">
+        <div class="main-footer__logo">
+          <img class="main-footer__pink" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк очки">
+        </div>
+        <ul class="main-footer__social">
+          <li class="main-footer__social-link  main-footer__social-link--twitter">
+            <a href="#">Twitter</a>
+          </li>
+          <li class="main-footer__social-link  main-footer__social-link--facebook">
+            <a href="#">Facebook</a>
+          </li>
+          <li class="main-footer__social-link  main-footer__social-link--youtube">
+            <a href="#">Youtube</a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright">
+          <span class="main-footer__copyright-text">Разработано</span>
+          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/">
+            <img class="main-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Лого Html Academy">
+          </a>
+        </div>
       </div>
     </footer>
     <div class="popup  popup--error">

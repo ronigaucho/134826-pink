@@ -1,15 +1,35 @@
-.price__slider-input {
-  display: none;
-}
 .price {
   background-color: #f2f2f2;
   padding-bottom: 90px;
+  .price__slider-input {
+    display: none;
+  }
+  .price__graph {
+    border: 2px solid black;
+    border-collapse: collapse;
+    .price__text {
+      width: 280px;
+    }
+  }
 }
-.price__graph {
-  border: 2px solid black;
-  border-collapse: collapse;
 
-}
-.price__text {
-  width: 280px;
-}
+@media (min-width: 701px) {
+  .price {
+    .price__graph {
+      margin: auto;
+      width: 940px;
+      border: none;
+     .price__header {
+        padding: 20px 65px;
+        border-right: 2px solid #ffffff;
+        background-color: #283645;
+        color:#ffffff;
+      }
+      .price__text {
+        border: 2px solid #e5e5e5;
+        width: 273px;
+        padding: 20px;
+      }
+    }
+  }
+}    
