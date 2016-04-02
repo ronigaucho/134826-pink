@@ -1,22 +1,21 @@
 .features-intro__header {
-  font-size:24px;
-  color:#ffffff;
-  text-align:center;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
   margin-bottom: 50px;
 }
-
-@media (min-width: 321px) and (max-width: 700px) {
+@media (min-width: 660px) and (max-width: 959px) {
   .features {
-    .features-intro {
+    &-intro {
       .clearfix();
-      width:auto;
+      width: auto;
       height: 313px;
-      .features-intro__header {
-        float:left;
+      &__header {
+        float: left;
         width: 300px;
         margin-bottom: 50px;
       }
-      .features-intro__image {
+      &__image {
         float: right;
         display: block;
         width: 320px;
@@ -25,19 +24,18 @@
     }
   }
 }
-
-@media (min-width: 701px) {
+@media (min-width: 960px) {
   .features {
-    .features-intro {
+    &-intro {
       .clearfix();
-      width:auto;
+      width: auto;
       height: 313px;
-      .features-intro__header {
-        float:left;
+      &__header {
+        float: left;
         width: 300px;
         margin-bottom: 50px;
       }
-      .features-intro__image {
+      &__image {
         float: right;
         display: block;
         width: 320px;

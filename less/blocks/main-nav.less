@@ -1,12 +1,11 @@
-
 .main-nav {
-  .main-nav__list {
-    display:none;
+  &__list {
+    display: none;
     padding: 0;
     margin: 0;
     list-style: none;
   }
-  .main-nav__toggle {
+  &__toggle {
     float: right;
     display: block;
     width: 50px;
@@ -15,57 +14,60 @@
     background: url("../img/icon-menu-burger.svg") no-repeat;
   }
 }
-
-@media (min-width: 321px) and (max-width: 700px) {
+@media (min-width: 660px) and (max-width: 959px) {
   .main-nav {
-    .main-nav__toggle {
-      display: none;
+    &__toggle {
+      float: right;
+      display: block;
+      width: 50px;
+      height: 24px;
+      font-size: 0;
+      background: url("../img/icon-menu-burger.svg") no-repeat;
     }
-    .main-nav__list {
-      display:block;
+    &__list {
+      display: none;
       padding: 0;
       margin: 0;
       list-style: none;
-      .main-nav__item {
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 80px;
-        .main-nav__link {
-          font-size: 18px;
-          color: #ffffff;
-          text-decoration: none;
-        }
-      }
-      .main-nav__item:last-child {
+    }
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 80px;
+      &:last-child {
         margin-right: 0;
       }
+    }
+    &__link {
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
     }
   }
 }
-
-@media (min-width: 701px) {
+@media (min-width: 960px) {
   .main-nav {
-    .main-nav__toggle {
+    &__toggle {
       display: none;
     }
-    .main-nav__list {
-      display:block;
+    &__list {
+      display: block;
       padding: 0;
       margin: 0;
       list-style: none;
-      .main-nav__item {
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 80px;
-        .main-nav__link {
-          font-size: 18px;
-          color: #ffffff;
-          text-decoration: none;
-        }
-      }
-      .main-nav__item:last-child {
+    }
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 80px;
+      &:last-child {
         margin-right: 0;
       }
+    }
+    &__link {
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
     }
   }
 }

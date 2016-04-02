@@ -1,70 +1,45 @@
-.page-footer {
+.top-footer {
+  padding-top: 45px;
+  text-align: center;
+  &__items-details {
+    color: red;
+  }
+}
+@media (min-width: 660px) and (max-width: 959px) {
   .top-footer {
-    padding-top: 45px;
-    text-align: center;
-    .top-footer__items-details {
-      color: red;
+    margin-bottom: 20px;
+    &__container {
+      width: 620px;
+      margin: 0 auto;
     }
-  }
-  iframe {
-    width:auto;
-    height:200px;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 700px) {
-  .page-footer {
-    .top-footer {
-      margin-bottom: 20px;
-      .top-footer__container {
-        width: 620px;
-        margin: 0 auto;
-        .top-footer__text {
-          font-size: 50px;
-          width: 470px;
-          margin: auto;
-          margin-bottom: 40px;
-        }
-        .top-footer__items {
-          display: inline-block;
-          width: 300px;
-          vertical-align: top;
-        }
-      }
+    &__text {
+      font-size: 50px;
+      width: 470px;
+      margin: auto auto 40px;
     }
-    iframe {
-      width:700px;
-      margin: auto;
-      height:200px;
+    &__items {
+      display: inline-block;
+      width: 300px;
+      vertical-align: top;
     }
   }
 }
-
-
 @media (min-width: 701px) {
-  .page-footer {
-    .top-footer {
-      margin-bottom: 20px;
-      .top-footer__container {
-        width: 940px;
-        margin: 0 auto;
-        .top-footer__text {
-          font-size: 50px;
-          width: 470px;
-          margin: auto;
-          margin-bottom: 40px;
-        }
-        .top-footer__items {
-          display: inline-block;
-          width: 300px;
-          vertical-align: top;
-        }
-      }
+  .top-footer {
+    margin-bottom: 20px;
+    &__container {
+      width: 940px;
+      margin: 0 auto;
     }
-    iframe {
-      width:1200px;
-      margin: auto;
-      height:200px;
+    &__text {
+      font-size: 50px;
+      width: 470px;
+      margin: auto auto 40px;
+    }
+    &__items {
+      display: inline-block;
+      width: 300px;
+      vertical-align: top;
     }
   }
 }

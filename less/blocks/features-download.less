@@ -1,12 +1,10 @@
 .features-download {
   width: 280px;
   text-align: center;
-  .features-download__btn {
+  &__btn {
     display: block;
     width: 202px;
-    margin:0 auto;;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     font-size: 18px;
     color: #ffffff;
     padding: 12px 36px;
@@ -14,32 +12,29 @@
     border-radius: 25px;
     text-decoration: none;
   }
-  .features-dowload__os {
+  &__os {
     display: inline-block;
     margin-right: 35px;
+    &--windows {
+      margin-right: 0;
+    }
   }
-  .features-dowload__os--windows {
-    margin-right: 0;
-  }
-  .features-download__info {
+  &__info {
     margin-top: 25px;
     color: #ffffff;
   }
 }
-
-@media (min-width: 321px) and (max-width: 700px) {
+@media (min-width: 660px) and (max-width: 959px) {
   .features-download {
     width: 300px;
     height: 210px;
     margin-top: -250px;
   }
 }
-
-@media (min-width: 701px) {
+@media (min-width: 960px) {
   .features-download {
     width: 300px;
     height: 210px;
     margin-top: -250px;
   }
-
 }

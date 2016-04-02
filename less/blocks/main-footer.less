@@ -1,119 +1,110 @@
 .main-footer {
   padding: 60px 0;
   margin: 0;
-  .main-footer__container {
-    width: 280px;
-    margin: auto;
-    .main-footer__logo {
-      width: 150px;
-      margin: auto;
-      margin-bottom: 30px;
+  &__container {
+    .container();
+  }
+  .main-footer__logo {
+    width: 150px;
+    margin: auto auto 30px;
+  }
+  &__social {
+    padding: 0;
+    margin: 0 auto 30px;
+    list-style: 0;
+    width: 200px;
+    &-link {
+      display: inline-block;
+      width: 52px;
+      height: 52px;
+      margin-right: 10px;
+      border-radius: 50%;
+      font-size: 0;
+      background-color: red;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    .main-footer__social {
+  }
+  &__copyright {
+    width: 150px;
+    margin: auto;
+  }
+}
+@media (min-width: 660px) and (max-width: 959px) {
+  .main-footer {
+    .clearfix();
+    padding: 60px 0;
+    margin: 0;
+    &__container {
+      .container();
+    }
+    &__logo {
+      float: left;
+      width: 150px;
+    }
+    &__social {
+      float: left;
       padding: 0;
-      padding-top: 0;
-      margin: 0 auto;
-      margin-bottom: 30px;
+      margin: 0;
+      margin-left: 60px;
       list-style: 0;
       width: 200px;
-      .main-footer__social-link {
+      &-link {
         display: inline-block;
-        width:52px;
+        width: 52px;
         height: 52px;
         margin-right: 10px;
         border-radius: 50%;
         font-size: 0;
         background-color: red;
-      }
-      .main-footer__social-link:last-child {
-        margin-right: 0;
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
-    .main-footer__copyright {
+    &__copyright {
+      float: right;
       width: 150px;
-      margin: auto;
     }
   }
 }
-
-@media (min-width: 321px) and (max-width: 700px) {
+@media (min-width: 960px) {
   .main-footer {
     .clearfix();
     padding: 60px 0;
     margin: 0;
-    .main-footer__container {
-      width: 620px;
-      margin: auto;
-      .main-footer__logo {
-        float: left;
-        width: 150px;
-        margin-right: 70px;
-      }
-      .main-footer__social {
-        float: left;
-        padding: 0;
-        padding-top: 0;
-        margin: 0;
-        list-style: 0;
-        width: 200px;
-        .main-footer__social-link {
-          display: inline-block;
-          width:52px;
-          height: 52px;
-          margin-right: 10px;
-          border-radius: 50%;
-          font-size: 0;
-          background-color: red;
-        }
-        .main-footer__social-link:last-child {
+    &__container {
+      .container();
+    }
+    &__logo {
+      float: left;
+      width: 150px;
+      margin-right: 220px;
+    }
+    &__social {
+      float: left;
+      padding: 0;
+      margin: 0;
+      margin-left: 200px;
+      list-style: 0;
+      width: 200px;
+      &-link {
+        display: inline-block;
+        width: 52px;
+        height: 52px;
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 0;
+        background-color: red;
+        &:last-child {
           margin-right: 0;
         }
-      }
-      .main-footer__copyright {
-        float: right;
-        width: 150px;
       }
     }
-  }
-}
-
-@media (min-width: 701px) {
-  .main-footer {
-    .clearfix();
-    padding: 60px 0;
-    margin: 0;
-    .main-footer__container {
-      width: 940px;
-      margin: auto;
-      .main-footer__logo {
-        float: left;
-        width: 150px;
-        margin-right: 220px;
-      }
-      .main-footer__social {
-        float: left;
-        padding: 0;
-        padding-top: 0;
-        margin: 0;
-        list-style: 0;
-        width: 200px;
-        .main-footer__social-link {
-          display: inline-block;
-          width:52px;
-          height: 52px;
-          margin-right: 10px;
-          border-radius: 50%;
-          font-size: 0;
-          background-color: red;
-        }
-        .main-footer__social-link:last-child {
-          margin-right: 0;
-        }
-      }
-      .main-footer__copyright {
-        float: right;
-        width: 150px;
-      }
+    &__copyright {
+      float: right;
+      width: 150px;
     }
   }
 }
