@@ -2,48 +2,52 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Главная</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__container">
-        <div class="main-header__logo">
-          <a class="main-header__pink" href="../index.html">
-            <img src="http://placehold.it/150x100" width="75" height="22" alt="лого Пинк">
-          </a>
-        </div>
-        <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="../index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="../photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="../form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <article class="features">
-        <section class="features-intro">
-          <h3 class="features-intro__header">Взгляните на жизнь иначе!</h3>
-          <img class="features-intro__image" src="http://placehold.it/150x100" width="320" height="313" alt="iphone в руке">
-        </section>
-        <section class="features-download">
-          <div class="features-download__container">
-            <a class="features-download__btn" href="#">Скачать приложение</a>
-            <a class="features-dowload__os  features-dowload__os--ios" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8"><img src="http://placehold.it/150x100" width="47" height="56" alt="ios"></a>
-            <a class="features-dowload__os  features-dowload__os--android" href="https://play.google.com/store?hl=ru"><img src="http://placehold.it/150x100" width="43" height="47" alt="android"></a>
-            <a class="features-dowload__os  features-dowload__os--windows" href="https://www.microsoft.com/ru-ru/store/apps"><img src="http://placehold.it/150x100" width="44" height="41" alt="windows"></a>
-            <p class="features-download__info">Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8</p>
+      <div class="main-header__head">
+        <div class="main-header__container">
+          <div class="main-header__logo">
+            <a class="main-header__pink" href="index.html">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="лого Пинк">
+            </a>
           </div>
-        </section>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">Html Academy</a>
+              </li>
+            </ul>
+            <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
+          </nav>
+        </div>
+      </div>
+      <article class="features">
+        <div class="features__container">
+          <section class="features-intro">
+            <h2 class="features-intro__header">Взгляните на жизнь иначе!</h2>
+            <img class="features-intro__image" src="img/iphone-hand-mobile.png" width="320" height="313" alt="iphone в руке">
+          </section>
+          <section class="features-download">
+              <a class="features-download__btn" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">Скачать приложение</a>
+              <a class="features-dowload__os  features-dowload__os--ios" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8"><img src="img/logo-apple.svg" width="47" height="56" alt="ios"></a>
+              <a class="features-dowload__os  features-dowload__os--android" href="https://play.google.com/store?hl=ru"><img src="img/logo-android.svg" width="43" height="47" alt="android"></a>
+              <a class="features-dowload__os  features-dowload__os--windows" href="https://www.microsoft.com/ru-ru/store/apps"><img src="img/logo-microsoft.svg" width="44" height="41" alt="windows"></a>
+              <p class="features-download__info">Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8</p>
+          </section>
+        </div>
       </article>
     </header>
     <main>
@@ -55,20 +59,30 @@
         <section class="description__promo">
           <div class="description__container">
             <div class="description__item">
+              <img class="description__app" src="img/iphone-screen-mobile.png" width="157" height="320" alt="Розовый фон">
               <h4 class="description__header">Поднимает настроение</h4>
               <p class="description__info">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
             </div>
             <div class="description__item">
+              <img class="description__app" src="img/iphone-screen-mobile.png" width="157" height="320" alt="Розовый фон">
               <h4 class="description__header">Меняет мир вокруг</h4>
               <p class="description__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
             <div class="description__item">
-              <h4 class="description__header">Заводит новых друзей</h4>
-              <p class="description__info">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+              <img class="description__app  description__app--last" src="img/iphone-screen-mobile.png" width="157" height="320" alt="Розовый фон">
+              <h4 class="description__header  description__header--last">Заводит новых друзей</h4>
+              <p class="description__info  description__info--last">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+            <div class="description__effect">
+              <img class="description__timer" src="http://placehold.it/150x100" width="298" height="345" alt="Часы">
+              <div class="description__research">
+                <h4 class="description__header">Еффект на 24 часа!</h4>
+                <p class="description__info">Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!</p>
+                <a class="description__link" href="#">Узнать больше об исследовании</a>
+              </div>
             </div>
           </div>
         </section>
-        <img class="description__app" src="http://placehold.it/150x100" width="157" height="320" alt="Розовый фон">
       </section>
       <section class="feedback">
         <div class="feedback__slider">
@@ -83,31 +97,36 @@
         </div>
         <div class="feedback__slide">
           <div class="feedback__container">
-            <p class="feedback__header">Николай Петров</p>
+            <p class="feedback__author">Николай Петров</p>
+            <p class="feedback__author-info">25 лет, водитель трамвая</p>
             <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
         </div>
         <div class="feedback__slide">
           <div class="feedback__container">
-            <p class="feedback__header">Николай Петров</p>
+            <p class="feedback__author">Николай Петров</p>
+            <p class="feedback__author-info">25 лет, водитель трамвая</p>
             <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
         </div>
         <div class="feedback__slide">
           <div class="feedback__container">
-            <p class="feedback__header">Николай Петров</p>
+            <p class="feedback__author">Николай Петров</p>
+            <p class="feedback__author-info">25 лет, водитель трамвая</p>
             <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
         </div>
       </section>
       <section class="price">
-        <input class="price__slider-input" type="radio" name="switcher" id="switcher-prc1">
-        <input class="price__slider-input" type="radio" name="switcher" id="switcher-prc2" checked>
-        <input class="price__slider-input" type="radio" name="switcher" id="switcher-prc3">
-        <div class="price__slider-controls">
-          <label class="price__slider-switcher" for="switcher-prc1"></label>
-          <label class="price__slider-switcher" for="switcher-prc2"></label>
-          <label class="price__slider-switcher" for="switcher-prc3"></label>
+        <div class="price__slider">
+          <input class="price__slider-input" type="radio" name="switcher" id="switcher-prc1">
+          <input class="price__slider-input" type="radio" name="switcher" id="switcher-prc2" checked>
+          <input class="price__slider-input" type="radio" name="switcher" id="switcher-prc3">
+          <div class="price__slider-controls">
+            <label class="price__slider-switcher" for="switcher-prc1"></label>
+            <label class="price__slider-switcher" for="switcher-prc2"></label>
+            <label class="price__slider-switcher" for="switcher-prc3"></label>
+          </div>
         </div>
         <table class="price__graph">
           <tr>
@@ -152,25 +171,51 @@
         </table>
       </section>
     </main>
-    <footer class="index-footer">
-      <section class="index-footer__contacts">
-        <div class="index-footer__container">
-          <p class="index-footer__text">Остались вопросы? Свяжитесь с нами!</p>
-          <div class="index-footer__items">
-            <p class="index-footer__items-header">Звоните:</p>
-            <a class="index-footer__items-details" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </div>
-          <div class="index-footer__items">
-            <p class="index-footer__items-header">Пишите:</p>
-            <a class="index-footer__items-details" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="index-footer__items">
-            <p class="index-footer__items-header">Приезжайте в гости:</p>
-            <p class="index-footer__items-details">ул. Большая Конюшенная, 19/8</p>
+    <footer class="page-footer">
+      <section class="top-footer">
+        <div class="top-footer__contacts">
+          <div class="top-footer__container">
+            <p class="top-footer__text">Остались вопросы? Свяжитесь с нами!</p>
+            <div class="top-footer__items">
+              <p class="top-footer__items-header">Звоните:</p>
+              <a class="top-footer__items-details" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="top-footer__items">
+              <p class="top-footer__items-header">Пишите:</p>
+              <a class="top-footer__items-details" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="top-footer__items">
+              <p class="top-footer__items-header">Приезжайте в гости:</p>
+              <p class="top-footer__items-details">ул. Большая Конюшенная, 19/8</p>
+            </div>
           </div>
         </div>
       </section>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.965685285748!2d30.345253233365405!3d59.932426869562256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5e66d51c5%3A0x6f00589ac258db97!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2s!4v1457620061303" width="320" height="645" style="border:0" allowfullscreen></iframe>
+      <img class="page-footer__map" src="img/bg-map.png">
+      <section class="bottom-footer">
+        <div class="bottom-footer__container">
+          <div class="bottom-footer__logo">
+            <img class="bottom-footer__pink" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк очки">
+          </div>
+          <ul class="bottom-footer__social">
+            <li class="bottom-footer__social-link  bottom-footer__social-link--twitter">
+              <a href="#">Twitter</a>
+            </li>
+            <li class="bottom-footer__social-link  bottom-footer__social-link--facebook">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="bottom-footer__social-link  bottom-footer__social-link--youtube">
+              <a href="#">Youtube</a>
+            </li>
+          </ul>
+          <div class="bottom-footer__copyright">
+            <span class="bottom-footer__copyright-text">Разработано</span>
+            <a class="bottom-footer__copyright-link" href="https://htmlacademy.ru/">
+              <img class="bottom-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Лого Html Academy">
+            </a>
+          </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

@@ -1,0 +1,144 @@
+.description {
+  margin-bottom: 45px;
+  margin-top: 40px;
+  &__intro {
+    text-align: center;
+  }
+  &__offer {
+    margin-bottom: 30px;
+  }
+  &__promo {
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  &__container {
+    .container();
+  }
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__app {
+    display: none;
+    margin: 0 auto;
+    &--last {
+      display: block;
+      margin-top: 160px;
+    }
+  }
+  &__header--last {
+    margin-top: -450px;
+  }
+  &__info--last {
+    padding-bottom: 370px;
+  }
+  &__effect {
+    display: none;
+  }
+}
+@media (min-width: 660px) and (max-width: 959px) {
+  .description {
+    &__intro {
+      margin-bottom: 60px;
+    }
+    &__promo {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &__container {
+      .container();
+      .clearfix();
+      &::before {
+        content: "";
+        display: block;
+        float: left;
+        width: 300px;
+        height: 320px;
+        padding-top: 120px;
+        background: url("../img/iphone-screen-mobile.png") no-repeat;
+      }
+    }
+    &__item {
+      width: 320px;
+      float: right;
+    }
+    &__app--last {
+      display: none;
+    }
+    &__header--last {
+      margin: 0;
+    }
+    &__info--last {
+      padding: 0;
+    }
+    &__effect {
+      display: block;
+    }
+    &__timer {
+      float: left;
+    }
+    &__research {
+      float: left;
+      width: 320px;
+      margin-top: 10px;
+      text-align: left;
+    }
+  }
+}
+@media (min-width: 960px) {
+  .description {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    &__intro {
+      margin-bottom: 70px;
+    }
+    &__offer {
+      font-size: 50px;
+      margin: 0;
+    }
+    &__promo {
+      .clearfix();
+      padding-bottom: 60px;
+    }
+    &__container {
+      .container();
+    }
+    &__item {
+      display: inline-block;
+      width: 280px;
+      margin-right: 30px;
+      vertical-align: top;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__app {
+      display: block;
+      margin: 0 auto;
+      width: 157px;
+      height: 320px;
+      &--last {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+    &__header--last {
+      margin: 0;
+    }
+    &__info--last {
+      padding: 0;
+    }
+    &__effect {
+      display: block;
+    }
+    &__timer {
+      float: left;
+      margin-right: 40px;
+    }
+    &__research {
+      float: left;
+      width: 530px;
+      margin-top: 100px;
+      text-align: left;
+    }
+  }
+}

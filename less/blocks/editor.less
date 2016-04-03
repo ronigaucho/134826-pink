@@ -1,0 +1,219 @@
+.editor {
+  text-align: center;
+  margin-bottom: 40px;
+  &__container {
+    .container();
+  }
+  &__tools {
+    display: inline-block;
+    height: 120px;
+    margin-top: 40px;
+  }
+  &__crop {
+    width: 50px;
+    height: 50px;
+  }
+  &__fill {
+    width: 50px;
+    height: 50px;
+  }
+  &__contrast {
+    width: 50px;
+    height: 50px;
+  }
+  &__range-contrast,
+  &__range-fill {
+    display: none;
+  }
+  &__post {
+    display: block;
+    width: 202px;
+    margin: 30px auto 10px;
+    font-size: 18px;
+    padding: 12px 36px;
+    border: 3px solid red;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  &__cancel {
+    display: block;
+    width: 202px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    color: grey;
+    padding: 12px 36px;
+    border: 3px solid grey;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+}
+@media (min-width: 660px) and (max-width: 959px) {
+  .editor {
+    text-align: center;
+    margin-bottom: 40px;
+    &__container {
+      .container();
+      background-color: grey;
+      padding: 60px 0;
+    }
+    &__form {
+      margin: 0;
+      padding: 0;
+      .clearfix();
+    }
+    &__image {
+      float: left;
+    }
+    &__tools {
+      position: relative;
+      float: left;
+      height: 150px;
+      width: 300px;
+      margin-left: 20px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    &__crop {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+    &__fill {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+    &__contrast {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+    &__range-crop {
+      position: absolute;
+      display: block;
+      top: 20px;
+      left: 80px;
+    }
+    &__range-fill {
+      position: absolute;
+      display: block;
+      top: 70px;
+      left: 80px;
+    }
+    &__range-contrast {
+      position: absolute;
+      display: block;
+      top: 120px;
+      left: 80px;
+    }
+    &__post {
+      float: right;
+      display: block;
+      width: 260px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      padding: 12px 36px;
+      border: 3px solid red;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+    &__cancel {
+      float: right;
+      display: block;
+      width: 260px;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      font-size: 18px;
+      color: grey;
+      padding: 12px 36px;
+      border: 3px solid grey;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+  }
+}
+@media (min-width: 960px) {
+  .editor {
+    text-align: center;
+    margin-bottom: 40px;
+    &__container {
+      width: 820px;
+      background-color: grey;
+      padding: 60px;
+    }
+    &__form {
+      margin: 0;
+      padding: 0;
+      .clearfix();
+    }
+    &__image {
+      float: left;
+    }
+    &__tools {
+      position: relative;
+      float: left;
+      height: 200px;
+      width: 400px;
+      margin-left: 100px;
+      margin-top: 0;
+      margin-bottom: 100px;
+    }
+    &__crop {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+    &__fill {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+    &__contrast {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+    &__range-crop {
+      position: absolute;
+      display: block;
+      top: 20px;
+      left: 80px;
+    }
+    &__range-fill {
+      position: absolute;
+      display: block;
+      top: 70px;
+      left: 80px;
+    }
+    &__range-contrast {
+      position: absolute;
+      display: block;
+      top: 120px;
+      left: 80px;
+    }
+    &__post {
+      float: left;
+      display: block;
+      width: 202px;
+      margin: 0 auto 0 100px;
+      font-size: 18px;
+      padding: 12px 36px;
+      border: 3px solid red;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+    &__cancel {
+      float: right;
+      display: block;
+      width: 202px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+      color: grey;
+      padding: 12px 36px;
+      border: 3px solid grey;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+  }
+}
