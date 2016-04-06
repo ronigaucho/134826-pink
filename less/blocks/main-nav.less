@@ -1,12 +1,9 @@
 .main-nav {
   &__list {
     display: none;
-    padding: 0;
-    margin: 0;
-    list-style: none;
   }
   &__toggle {
-    float: right;
+    //float: right;
     display: block;
     width: 50px;
     height: 24px;
@@ -14,10 +11,10 @@
     background: url("../img/icon-menu-burger.svg") no-repeat;
   }
 }
-@media (min-width: 660px) and (max-width: 959px) {
+@media @tablet {
   .main-nav {
     &__toggle {
-      float: right;
+      //float: right;
       display: block;
       width: 50px;
       height: 24px;
@@ -26,48 +23,36 @@
     }
     &__list {
       display: none;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-    &__item {
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 80px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-    &__link {
-      font-size: 18px;
-      color: #ffffff;
-      text-decoration: none;
     }
   }
 }
-@media (min-width: 960px) {
+@media @desktop {
   .main-nav {
+    flex-grow: 1;
+    min-height: 18px;
     &__toggle {
       display: none;
     }
     &__list {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width:auto;
       padding: 0;
       margin: 0;
       list-style: none;
     }
     &__item {
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 80px;
-      &:last-child {
-        margin-right: 0;
-      }
+
     }
     &__link {
       font-size: 18px;
+      line-height: 18px;
+      font-family: "Open Sans","Arial",sans-serif;
+      font-weight: 400;
       color: #ffffff;
       text-decoration: none;
+      cursor: pointer;
     }
   }
 }

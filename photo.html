@@ -10,8 +10,8 @@
     <header class="main-header">
       <div class="main-header__head">
         <div class="main-header__container">
-          <div class="main-header__logo">
-            <a class="main-header__pink" href="index.html">
+          <div class="main-logo">
+            <a class="main-logo__pink" href="index.html">
               <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="лого Пинк">
             </a>
           </div>
@@ -45,20 +45,20 @@
         <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
         <section class="post post--popular">
           <div class="post__promo">Панорама дня</div>
-          <a class="post__link" href="#"><img class="post__image" src="img/panorama-mobile.jpg" width="320" height="137" alt="Фото1"></a>
-          <div class="gallery__container">
-          <div class="post__description">
-            <p class="post__author">Анна<span class="post__upload-time">(5 минут назад)</span></p>
-            <p class="post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-            <a class="post__like" href="#">Нравится: <span class="post__like-count">215</span></a>
-          </div>
+          <a class="post__link-popular" href="#"><img class="post__image" src="img/panorama-mobile.jpg" width="320" height="137" alt="Фото1"></a>
+          <div class="post__container">
+            <div class="post__description-popular">
+              <p class="post__author-popular">Анна <span class="post__upload-time">(5 минут назад)</span></p>
+              <p class="post__text-popular">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <a class="post__like-popular" href="#">Нравится: <span class="post__like-count">215</span></a>
+            </div>
           </div>
         </section>
         <div class="gallery__container">
         <section class="post">
           <a class="post__link" href="#"><img class="post__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фото2"></a>
           <div class="post__description">
-            <p class="post__author">Левон<span class="post__upload-time">(5 часов назад)</span></p>
+            <p class="post__author">Левон <span class="post__upload-time">(5 часов назад)</span></p>
             <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <a class="post__like" href="#">Нравится: <span class="post__like-count">356</span></a>
           </div>
@@ -66,7 +66,7 @@
         <section class="post">
           <a class="post__link" href="#"><img class="post__image" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Фото3"></a>
           <div class="post__description">
-            <p class="post__author">Антон<span class="post__upload-time">(12 часов назад)</span></p>
+            <p class="post__author">Антон <span class="post__upload-time">(12 часов назад)</span></p>
             <p class="post__text">Соседи будут рады!</p>
             <a class="post__like" href="#">Нравится: <span class="post__like-count">666</span></a>
           </div>
@@ -74,7 +74,7 @@
         <section class="post">
           <a class="post__link" href="#"><img class="post__image" src="img/photo-3-mobile.jpg" width="280" height="180" alt="Фото4"></a>
           <div class="post__description">
-            <p class="post__author">Борис<span class="post__upload-time">(20 часов назад)</span></p>
+            <p class="post__author">Борис <span class="post__upload-time">(20 часов назад)</span></p>
             <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <a class="post__like" href="#">Нравится: <span class="post__like-count">215</span></a>
           </div>
@@ -82,7 +82,7 @@
         <section class="post">
           <a class="post__link" href="#"><img class="post__image" src="img/photo-4-mobile.jpg" width="280" height="180" alt="Фото5"></a>
           <div class="post__description">
-            <p class="post__author">Сергей<span class="post__upload-time">(25 часов назад)</span></p>
+            <p class="post__author">Сергей <span class="post__upload-time">(25 часов назад)</span></p>
             <p class="post__text">Самая кубанская в мире!</p>
             <a class="post__like" href="#">Нравится: <span class="post__like-count">4</span></a>
           </div>
@@ -90,7 +90,7 @@
         <section class="post">
           <a class="post__link" href="#"><img class="post__image" src="img/photo-5-mobile.jpg" width="280" height="180" alt="Фото6"></a>
           <div class="post__description">
-            <p class="post__author">Максим<span class="post__upload-time">(40 часов назад)</span></p>
+            <p class="post__author">Максим <span class="post__upload-time">(40 часов назад)</span></p>
             <p class="post__text">Где снег-то?</p>
             <a class="post__like" href="#">Нравится: <span class="post__like-count">15</span></a>
           </div>
@@ -98,7 +98,7 @@
         <section class="post">
           <a class="post__link" href="#"><img class="post__image" src="img/photo-6-mobile.jpg" width="280" height="180" alt="Фото7"></a>
           <div class="post__description">
-            <p class="post__author">Надежда<span class="post__upload-time">(45 часов назад)</span></p>
+            <p class="post__author">Надежда <span class="post__upload-time">(45 часов назад)</span></p>
             <p class="post__text">Всем GM и взаимные лайки!</p>
             <a class="post__like" href="#">Нравится: <span class="post__like-count">2560</span></a>
           </div>
@@ -109,23 +109,38 @@
         <div class="editor__container">
         <p class="editor__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <form class="editor__form" action="https://echo.htmlacademy.ru" method="post">
-          <img class="editor__image" src="img/photo-7-mobile.jpg" width="280" height="374" alt="Фото8">
-          <div class="editor__tools">
-            <button class="editor__crop" for="input-range-crop">
-              <svg class="editor__crop-icon"></svg>
-            </button>
-            <button class="editor__fill" for="input-range-fill">
-              <svg class="editor__fill-icon"></svg>
-            </button>
-            <button class="editor__contrast" for="input-range-contrast">
-              <svg class="editor__contrast-icon"></svg>
-            </button>
-            <input type="range" class="editor__range-crop" name="range-scale" id="input-range-crop">
-            <input type="range" class="editor__range-fill" name="range-scale" id="input-range-fill">
-            <input type="range" class="editor__range-contrast" name="range-scale" id="input-range-contrast">
+          <div class="editor__image">
+            <img src="img/photo-7-mobile.jpg" width="280" height="374" alt="Фото8">
           </div>
-          <input class="editor__post" type="submit" value="Запостить">
-          <input class="editor__cancel" type="reset" value="Отмена">
+          <div class="editor__set">
+            <div class="editor__tools">
+              <div class="editor__tool  editor__tool--crop">
+                <button class="editor__crop-btn">
+                  <!--<svg class="editor__crop-icon"></svg>-->
+                </button>
+                <label for="input-range-crop" class="editor__range-crop"></label>
+                <input type="range" class="editor__range" name="range-scale" id="input-range-crop">
+              </div>
+              <div class="editor__tool  editor__tool--fill">
+                <button class="editor__fill-btn">
+                  <!--<svg class="editor__fill-icon"></svg>-->
+                </button>
+                <label for="input-range-fill" class="editor__range-fill"></label>
+                <input type="range" class="editor__range" name="range-scale" id="input-range-fill">
+              </div>
+              <div class="editor__tool  editor__tool--contrast">
+                <button class="editor__contrast-btn">
+                  <!--<svg class="editor__contrast-icon"></svg>-->
+                </button>
+                <label  class="editor__range-contrast" for="input-range-contrast"></label>
+                <input type="range" class="editor__range" name="range-scale" id="input-range-contrast">
+              </div>
+            </div>
+            <div class="editor__buttons">
+              <input class="editor__post" type="submit" value="Запостить">
+              <input class="editor__cancel" type="reset" value="Отмена">
+            </div>
+          </div>
         </form>
         </div>
       </section>
